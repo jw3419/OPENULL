@@ -22,7 +22,7 @@ $ npm run start:dev
 5️⃣ 아키텍처 리팩토링<br><br>
 6️⃣ 코드 리팩토링<br><br>
 7️⃣ 깃허브 업로드 (DB Schema, API Document, ...) **(완료)**<br><br>
-8️⃣ 회고 작성<br><br>
+8️⃣ 회고 작성 **(완료)**<br><br>
 
 ## 4. DB Schema
 ![OPENULL-TEST](https://user-images.githubusercontent.com/68436925/110335352-14918500-8067-11eb-8543-7a1886223644.png)
