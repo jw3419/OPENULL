@@ -36,7 +36,7 @@ $ npm run start:dev
 <br>
 
 ## 6. 시연 영상
-업로드 예정
+👉 [시연 영상 바로가기](https://drive.google.com/file/d/1emVmA75FXyupnOGDivjqjT7W64IEgFpU/view?usp=sharing)
 
 <br>
 
