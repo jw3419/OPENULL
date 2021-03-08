@@ -4,11 +4,15 @@
 $ npm install
 ```
 
+<br>
+
 ## 2. Running the app
 
 ```bash
 $ npm run start:dev
 ```
+
+<br>
 
 ## 3. 초기 기획
 1️⃣ 스키마 목업 **(완료)**<br><br>
@@ -20,14 +24,22 @@ $ npm run start:dev
 7️⃣ 깃허브 업로드 (DB Schema, API Document, ...) **(완료)**<br><br>
 8️⃣ 회고 작성<br><br>
 
+<br>
+
 ## 4. DB Schema
 ![OPENULL-TEST](https://user-images.githubusercontent.com/68436925/110335352-14918500-8067-11eb-8543-7a1886223644.png)
+
+<br>
 
 ## 5. API DOC
 [구글 드라이브 링크](https://drive.google.com/file/d/10UE9Kc2X3rNO2GZTnb2wFLcotD1r4FEc/view?usp=sharing)
 
+<br>
+
 ## 6. 시연 영상
 업로드 예정
+
+<br>
 
 ## 7. 회고
 업로드 예정
