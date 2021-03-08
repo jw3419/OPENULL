@@ -38,6 +38,8 @@ $ npm run start:dev
 ## 6. 시연 영상
 👉 [시연 영상 바로가기](https://drive.google.com/file/d/1emVmA75FXyupnOGDivjqjT7W64IEgFpU/view?usp=sharing)
 
+마지막에 설명이 부족한 것 같아서 덧붙이겠습니다! 주문 상태를 반려로 변경했을 때, <5000원 할인 쿠폰>은 복구되지 않고 <5% 할인 쿠폰>만 복구되는 기능이었습니다!
+
 <br>
 
 ## 7. 회고
