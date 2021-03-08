@@ -26,6 +26,7 @@ $ npm run start:dev
 
 ## 4. DB Schema
 ![OPENULL-TEST](https://user-images.githubusercontent.com/68436925/110335352-14918500-8067-11eb-8543-7a1886223644.png)
+
 <br>
 
 ## 5. API DOC
