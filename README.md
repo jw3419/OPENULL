@@ -11,14 +11,14 @@ $ npm run start:dev
 ```
 
 ## 3. 초기 기획
-1️⃣ 스키마 목업
-2️⃣ API 문서 작성
-3️⃣ 모델 작성 및 Nest.js와 MySQL 연동
-4️⃣ API 개발!
-5️⃣ 아키텍처 리팩토링
-6️⃣ 코드 리팩토링
-7️⃣ 깃허브 업로드 (DB Schema, API Document, ...)
-8️⃣ 회고 작성
+1️⃣ 스키마 목업<br>
+2️⃣ API 문서 작성<br>
+3️⃣ 모델 작성 및 Nest.js와 MySQL 연동<br>
+4️⃣ API 개발!<br>
+5️⃣ 아키텍처 리팩토링<br>
+6️⃣ 코드 리팩토링<br>
+7️⃣ 깃허브 업로드 (DB Schema, API Document, ...)<br>
+8️⃣ 회고 작성<br>
 
 ## 4. DB Schema
 ![OPENULL-TEST](https://user-images.githubusercontent.com/68436925/110335352-14918500-8067-11eb-8543-7a1886223644.png)
