@@ -30,7 +30,7 @@ $ npm run start:dev
 <br>
 
 ## 5. API DOC
-[API 문서 링크](https://drive.google.com/file/d/10UE9Kc2X3rNO2GZTnb2wFLcotD1r4FEc/view?usp=sharing)
+🔗[API 문서 링크](https://drive.google.com/file/d/10UE9Kc2X3rNO2GZTnb2wFLcotD1r4FEc/view?usp=sharing)
 ![server_flow](https://user-images.githubusercontent.com/68436925/110346829-4e688880-8073-11eb-8997-38f2b48bcd49.jpg)
 
 
