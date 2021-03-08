@@ -1,73 +1,46 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+## 1. Installation
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+<br>
+
+## 2. Running the app
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+<br>
 
-```bash
-# unit tests
-$ npm run test
+## 3. 초기 기획
+1️⃣ 스키마 목업 **(완료)**<br><br>
+2️⃣ API 문서 작성 **(완료)**<br><br>
+3️⃣ 모델 작성 및 Nest.js와 MySQL 연동 **(완료)**<br><br>
+4️⃣ API 개발! **(완료)**<br><br>
+5️⃣ 아키텍처 리팩토링<br><br>
+6️⃣ 코드 리팩토링<br><br>
+7️⃣ 깃허브 업로드 (DB Schema, API Document, ...) **(완료)**<br><br>
+8️⃣ 회고 작성 **(완료)**<br><br>
 
-# e2e tests
-$ npm run test:e2e
+## 4. DB Schema
+![OPENULL-TEST](https://user-images.githubusercontent.com/68436925/110335352-14918500-8067-11eb-8543-7a1886223644.png)
 
-# test coverage
-$ npm run test:cov
-```
+<br>
 
-## Support
+## 5. API DOC (🔗[API 문서 링크](https://drive.google.com/file/d/10UE9Kc2X3rNO2GZTnb2wFLcotD1r4FEc/view?usp=sharing))
+![server_flow](https://user-images.githubusercontent.com/68436925/110346829-4e688880-8073-11eb-8997-38f2b48bcd49.jpg)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+<br>
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## 6. 시연 영상
+👉 [시연 영상 바로가기](https://drive.google.com/file/d/1emVmA75FXyupnOGDivjqjT7W64IEgFpU/view?usp=sharing)
 
-## License
+마지막에 설명이 부족한 것 같아서 덧붙이겠습니다! 주문 상태를 반려로 변경했을 때, <5000원 할인 쿠폰>은 복구되지 않고 <5% 할인 쿠폰>만 복구되는 기능이었습니다!
 
-Nest is [MIT licensed](LICENSE).
+<br>
+
+## 7. 회고
+👉 [회고 바로가기](https://velog.io/@hongin/%EC%9D%B8%EC%9E%90%ED%95%9C-%ED%9A%8C%EA%B3%A0%ED%83%80%EC%9E%84Test-OPENULL%EC%86%8C%EB%B9%84%EC%9D%98-%EB%AF%B8%ED%95%99)
