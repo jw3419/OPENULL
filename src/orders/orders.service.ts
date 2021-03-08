@@ -18,8 +18,8 @@ export class OrdersService {
 
   public async findList(req: FastifyRequest): Promise<object> {
     const userData = await authHandler(req);
-    if (!userData)
-      throw new HttpException(409, 'This is an unauthenticated user.');
+    
+    if (!userData) throw new HttpException(409, 'This is an unauthenticated user.');
 
     const findOrder = await this.orders.findAll({
       where: { user_id: userData.id },
@@ -31,8 +31,7 @@ export class OrdersService {
   public async create(orderData, req: FastifyRequest): Promise<object> {
     const userData = await authHandler(req);
 
-    if (!userData)
-      throw new HttpException(409, 'This is an unauthenticated user.');
+    if (!userData) throw new HttpException(409, 'This is an unauthenticated user.');
 
     const findVoucherData = await this.vouchers.findOne({
       where: { name: orderData.use_voucher },

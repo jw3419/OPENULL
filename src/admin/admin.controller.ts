@@ -1,6 +1,5 @@
 import { Body, Controller, Patch, Post, Query, Req } from '@nestjs/common';
 import { FastifyRequest } from 'fastify';
-import { QueryTypes } from 'sequelize/types';
 import { VoucherAttributes } from 'src/interfaces/vouchers.interface';
 import { AdminsService } from './admin.service';
 
@@ -19,11 +18,7 @@ export class AdminsController {
   }
 
   @Patch('status')
-  updateOrderStatus(
-    @Req() req: FastifyRequest,
-    @Query('orderId') orderId: number,
-    @Body() { status },
-  ) {
+  updateOrderStatus(@Req() req: FastifyRequest, @Query('orderId') orderId: number, @Body() { status }) {
     return this.adminService.updateOrderStatus(req, orderId, status);
   }
 }

@@ -25,8 +25,7 @@ export class AdminsService {
   public async updateAdminUser(req: FastifyRequest) {
     const userData = await authHandler(req);
 
-    if (!userData)
-      throw new HttpException(409, 'This is an unauthenticated user.');
+    if (!userData) throw new HttpException(409, 'This is an unauthenticated user.');
 
     const updateUserData = await this.users.update(
       { admin: true },
@@ -49,7 +48,7 @@ export class AdminsService {
 
     if (status === '주문반려' && findOrderData.use_voucher === '5% 할인 쿠폰') {
       const paybackVoucher = await this.userVouchers.create({
-        user_id: userData.id,
+        user_id: findOrderData.user_id,
         voucher_id: findVoucherData.id,
       });
     }

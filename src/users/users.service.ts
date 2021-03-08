@@ -13,6 +13,7 @@ import { UserVoucher } from 'src/models/user_voucher.model';
 import { UserVoucherAttributes } from 'src/interfaces/user-voucher.interface';
 import { VoucherAttributes } from 'src/interfaces/vouchers.interface';
 import { Voucher } from 'src/models/vouchers.model';
+import { CreateUserDto, LoginUserDto } from './dto/users.dto';
 
 @Injectable()
 export class UsersService {
@@ -20,18 +21,15 @@ export class UsersService {
   public userVouchers = UserVoucher;
   public voucher = Voucher;
 
-  public async signUp(userData: UserAttributes): Promise<object> {
+  public async signUp(userData: CreateUserDto): Promise<object> {
     const findUser: UserAttributes = await this.users.findOne({
       where: { email: userData.email },
     });
-    if (findUser)
-      throw new HttpException(
-        409,
-        `You're email ${userData.email} already exists`,
-      );
+
+    if (findUser) throw new HttpException(409, `You're email ${userData.email} already exists`);
 
     const hashedPassword = await bcrypt.hash(userData.password, 10);
-    const createUserData: User = await this.users.create({
+    const createUserData: UserAttributes = await this.users.create({
       ...userData,
       password: hashedPassword,
     });
@@ -58,40 +56,32 @@ export class UsersService {
     return { message: 'Success to sign up' };
   }
 
-  public async signIn(
-    userData: UserAttributes,
-    res: FastifyReply,
-  ): Promise<object> {
+  public async signIn(userData: UserAttributes, res: FastifyReply): Promise<object> {
     const findUser: UserAttributes = await this.users.findOne({
       where: { email: userData.email },
     });
 
-    if (!findUser)
-      throw new HttpException(409, `You're email ${userData.email} not found`);
+    if (!findUser) throw new HttpException(409, `You're email ${userData.email} not found`);
 
-    const isPasswordMatching: boolean = await bcrypt.compare(
-      userData.password,
-      findUser.password,
-    );
+    const isPasswordMatching: boolean = await bcrypt.compare(userData.password, findUser.password);
 
-    if (!isPasswordMatching)
-      throw new HttpException(409, "You're password not matching");
+    if (!isPasswordMatching) throw new HttpException(409, "You're password not matching");
+
 
     const tokenData = createToken(userData);
-    createCookie(tokenData, res);
+    const cookie = createCookie(tokenData, res);
+
     return { message: 'Success to sign in' };
   }
 
   public async signOut(req: FastifyRequest, res: FastifyReply) {
     const userData = await authHandler(req);
+
     if (userData) {
-      res.clearCookie('accessToken', {
-        path: '/',
-        httpOnly: true,
-        sameSite: 'none',
-      });
+      res.clearCookie('accessToken', {path: '/', httpOnly: true, sameSite: 'none'});
       return { message: 'Success to Sign out' };
-    } else {
+    } 
+    else {
       return { message: 'Fail to sign out' };
     }
   }

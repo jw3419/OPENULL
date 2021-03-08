@@ -12,6 +12,7 @@ async function bootstrap() {
     AppModule,
     new FastifyAdapter(),
   );
+  
   app.register(fastifyCookie, { secret: 'my-secret' });
   app.useGlobalPipes(
     new ValidationPipe({

@@ -3,6 +3,7 @@ import { JwtService } from '@nestjs/jwt';
 import { UserAttributes } from 'src/interfaces/users.interface';
 import { User } from 'src/models/users.model';
 import HttpException from '../exceptions/exceptions';
+import { LoginUserDto } from 'src/users/dto/users.dto';
 
 var jwt = new JwtService({ secret: process.env.JWT_SECRET });
 
