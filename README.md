@@ -16,5 +16,8 @@ $ npm run start:dev
 ## 4. API DOC
 https://drive.google.com/file/d/10UE9Kc2X3rNO2GZTnb2wFLcotD1r4FEc/view?usp=sharing
 
-## 5. 회고
+## 5. 시연 영상
+업로드 예정
+
+## 6. 회고
 업로드 예정
